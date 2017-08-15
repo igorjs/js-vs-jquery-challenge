@@ -20,16 +20,22 @@ div {
     width: 100%;
 }
 
-.panel .header, 
-.panel .content {
-    padding: 10px;
-}
-
 .panel .header {
     background-color: #999;
     cursor: pointer;
     margin: 0;
+    padding: 10px;
 }
+
+.panel .content {
+    display: none;
+    padding: 10px;
+}
+
+.panel.open .content {
+    display: block;
+}
+
 /* 
 @keyframes slide {
   from {max-height: 0;}
